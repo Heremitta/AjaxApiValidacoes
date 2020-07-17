@@ -1,0 +1,220 @@
+body *{
+outline-color: rgba(0,0,0,0)!important;
+border-color: none;
+}
+button {
+
+box-shadow: none!important;
+}
+.disable{
+    display: none!important;
+}
+.incorreto {
+border: 3px solid #d54c4c;
+}
+div#container {
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+}
+div#lista div.veiculos div:not(:nth-last-child(2)) {
+display: flex;
+flex-direction: column;
+}
+div#lista {
+    padding-bottom: 35px;
+    display: flex;
+width: 89%;
+flex-wrap: wrap;
+position: relative;
+flex-direction: row;
+justify-content: space-around;
+align-items: center;
+}
+
+div#container {
+display: flex;
+flex-direction: column;
+align-items: center;
+}   
+div#novoCadastro {
+width: 60%;
+display: none;
+margin: 50px;
+padding: 30px;
+background: #292a2a55;
+max-width: fit-content;
+border-radius: 15px;
+}
+.veiculos {
+box-shadow: 3px 3px 5px 3px rgba(0,0,0,.5);
+min-width: 237px;
+width: 42%;
+padding: 10px;
+position: relative;
+background: #292a2a55;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+margin-top: 25px;
+border-radius: 20px;
+}
+.btn-primary {
+padding: 9px;
+color: #fff;
+background-color: #007bff;
+border-color: #007bff;
+margin-right: 3px;
+font-weight: 600;
+font-size: 17px;
+}
+.btn-danger{
+padding: 9px;
+}
+.show{
+display: flex!important;
+flex-direction: column;
+/* align-items: center; */
+justify-content: center;
+}
+header {
+display: flex;
+align-items: center;
+justify-content: center;
+height: 100px;
+}
+.loading{
+width: 24px;
+position: absolute;
+right: 100px;
+bottom: 12px;
+}
+#loadingPrincipal{
+/* width: 50px; */
+position:absolute;
+top: 50%;
+right: 50%;
+}
+.botao{
+position: relative;
+top: 10px;
+}
+textarea{
+    width:100%;
+    height: 150px;
+    box-sizing:border-box;
+    direction:initial;
+    display:block;
+    max-width:100%;
+    line-height:1.5;
+    padding:15px 15px 30px;
+    border-radius:3px;
+    border:1px solid #F7E98D;
+    font:13px Tahoma, cursive;
+    transition:box-shadow 0.5s ease;
+    box-shadow:0 4px 6px rgba(0,0,0,0.1);
+    background:linear-gradient(#F9EFAF, #F7E98D);
+    background:-o-linear-gradient(#F9EFAF, #F7E98D);
+    background:-ms-linear-gradient(#F9EFAF, #F7E98D);
+    background:-moz-linear-gradient(#F9EFAF, #F7E98D);
+    background:-webkit-linear-gradient(#F9EFAF, #F7E98D);
+}
+.autocomplete {
+    position: relative;
+}
+.autocomplete #novoCidade {
+width: 100%!important;
+/* color: yellow; */
+/* border: 5px solid black!important; */
+}
+#novoCadastro .autocomplete {
+width: 104%!important;
+}
+input {
+border: 1px solid transparent;
+background-color: #f1f1f1;
+padding: 10px;
+font-size: 16px;
+}
+
+input[type=text] {
+background-color: #f1f1f1;
+width: 100%;
+}
+.botao #loadingPrincipal {
+/* width: 50px; */
+position: absolute;
+top: 25%;
+right: 1px;
+}
+input[type=submit] {
+background-color: DodgerBlue;
+color: #fff;
+cursor: pointer;
+}
+.container div {
+text-align: center;
+}
+#container h1 {
+margin-top: 30px;
+font-family: serif;
+font-weight: 700;
+text-align: center;
+}
+label {
+font-family: serif;
+font-weight: 700;
+color: #5e5757;
+margin-bottom: 0px!important;
+}
+textarea{
+height: auto!important;
+}
+.autocomplete-items {
+position: absolute;
+border: 1px solid #d4d4d4;
+border-bottom: none;
+border-top: none;
+z-index: 99;
+top: 100%;
+left: 0;
+right: 0;
+color: dimgray;
+font-weight: initial;
+font-family: sans-serif;
+}
+.autocomplete-items div:hover {
+color: blue;
+
+}
+.autocomplete-items div {
+padding: 10px;
+cursor: pointer;
+background-color: #fff; 
+border-bottom: 1px solid #d4d4d4; 
+flex-direction: row!important;
+}
+
+/*when hovering an item:*/
+.autocomplete-items div:hover {
+background-color: #e9e9e9; 
+}
+
+/*when navigating through the items using the arrow keys:*/
+.autocomplete-active {
+background-color: DodgerBlue !important; 
+color: #ffffff; 
+}
+.veiculos.input-group div:not(:last-child) {
+width: 80%;
+margin-top: 10px;
+}
+div#novoCadastro input {
+text-align: left;
+}
+.btn-warning {
+padding: 9px;
+font-weight: 600;
+margin-right: 5px;
+}

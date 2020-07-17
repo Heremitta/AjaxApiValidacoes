@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <title>Teste</title>
+    <link rel="shortcut icon" href="favicon.png" type="image/png">
+    <link rel="stylesheet" href="src/style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+              <div>
+                  Teste Front-End, para empresa SinerSoft
+              </div>
+            </div>
+          </nav>
+    </header>
+    <div id="container">
+        <button id="btnNovoCadastro" class="btn btn-success">Novo Cadastro</button>
+        <div id="novoCadastro" class="input-group">
+            <label for="novoPlaca" class="novocadastro label">Placa</label>
+            <input type="text" name="novoPlaca" id="novoPlaca" class="input input-group-text">
+            <label for="novoCidade" class="novocadastro label" >Cidade</label>
+            <div class="autocomplete">
+                <input type="text" name="novoCidade" id="novoCidade" class="input cidade input-group-text" autocomplete="nope">
+            </div>
+            <label for="novoKmAtual" class="novocadastro label">Km Atual</label>
+            <input type="text" name="novoKmAtual" id="novoKmAtual" class="input input-group-text">
+            <label for="novoEmailProprietario" class="novocadastro label">Email Proprietario</label>
+            <input type="text" name="novoEmailProprietario" id="novoEmailProprietario" class="input input-group-text">
+            <div class="botao">
+                <button id="novoCadastroEnviar" class="btn btn-primary" >Enviar</button>
+                <div class="spinner-border text-primary disable" role="status" id='loadingNovo'>
+                    <span class="sr-only">Loading...</span>
+                </div>
+            </div>
+        </div>
+            <div class="spinner-border text-primary" role="status" id='loadingPrincipal'>
+                <span class="sr-only">Loading...</span>
+            </div>
+        
+        <h1>Relação de Veículos</h1>
+        <div id="lista"></div>
+    </div>    
+    </body>
+<script src="src/jquery-3.5.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+<!-- <script src="script.js"></script> -->
+<script src="src/autoComplete.js"></script>
+<script src="src/render.js"></script>
+<script src="src/config.js"></script>
+<script src="src/Requisicao.js"></script>
+<script src="src/Veiculos.js"></script>
+<script src="src/Cidade.js"></script>
+<script src="src/main.js"></script>
+</html>
